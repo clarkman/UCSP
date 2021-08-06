@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#Simple make wrapper
+make -f ./qfproc.mak $1

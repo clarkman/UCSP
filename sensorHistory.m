@@ -1,0 +1,6 @@
+function [ lbls, arr ] = sensorHistory( lbls, strs )
+%SENSORHISTORY Load and convert the standard SST sensor history table
+%   Converts a saved Spool Pulse Table (WGSSensorHistory) to
+%
+%                                             WGSSensorHistoryID,ComputerID,ServerTime,SensorIDNumber,StatTime,Latitude,Longitude,Elevation,Battery,Signal,Orientation,PDOP,Speed,Bearing,NoiseMean,NoiseSigma,WindSpeed,WindDirection,TemperatureDegC,UserStatus1,UserStatus2,Weather,Reserved1,SensorMode,Condition,STATSequence,ExternalTriggerSharpness,SecondsSinceBoot,PrimaryMicGain,DroppedPackets,SequenceNumber,SpoolStatus,SensorStatusFlags,GPSSatellites,GPSMeanSNR,GPSSNR1,GPSSNR4,MagneticFieldX,MagneticFieldY,MagneticFieldZ,WGSSensorLinkHistoryID
+[ lbls, arr ] = pluckArray( lbls, strs, [], { '%d',              '%d',      'dn',      '%lu',         'dn',    '%g',    '%g',     '%g',     '%d',   '%d',  '%g',       '%g','%g', '%g',   '%g',     '%g',      '%g',     '%g',         '%g',           '%d',       '%d',       '%d',   '%d',     '%d',      '%g',     '%d',        '%g',                    '%d',            '%d',          '%d',          '%d',          '%d',       '%d',             '%d',         '%d',      '%d',   '%d',   '%g',          '%g',          '%g',          '%d' } );

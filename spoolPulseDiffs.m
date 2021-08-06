@@ -1,0 +1,1 @@
+function spoolPulseDiffs( sp )
