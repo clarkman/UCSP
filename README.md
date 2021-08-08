@@ -1,4 +1,4 @@
-# mcode
+# UCSP (Ultra Cool Signal Processing)
 Matlab code for signal processing
 
 This code is distributed with absolutely no guarantees of accuracy or correctness at all. Think: my scratchpad pushed to git for better availability, and for making friends. Use at your own risk.
